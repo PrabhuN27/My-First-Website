@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Roboto&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calorie Calc</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Calorie <br />Counter</h1>
+        </header>
+        <div class="BioInput">
+            <form>
+                First Name:<br>
+                <input type="text" id="FirstName" placeholder="First Name">
+                <br>
+                Last Name:
+                <br>
+                <input type="text" id="LastName" placeholder="Last Name">
+                <br>
+                Age:
+                <br>
+                <input type="text" id="Age" placeholder="Age">
+                <br>
+                Height:
+                <br>
+                <input type="text" id="Height" placeholder="Height">
+                <br>
+                Weight:
+                <br>
+                <input type="text" id="Weight" placeholder="Weight">
+                <br>
+                <input type="checkbox" id="Save"> Remember Me
+                <br>
+                <input class="Button" type="button" id="Submit1" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div class="Results">
+        <div class="rectangle">
+            <h3>Welcome Guest</h3>
+        </div>
+        <span class="a"><b>Calories: </b><strong id="o1">NA/NA</strong><br>
+            <p class="Warning" id="WarningCal"></p>
+        </span>
+        <span class="a"><b>Protien: </b><strong id="o2">NA/NA</strong><br>
+            <p class="Warning" id="WarningPro"></p>
+        </span>
+        <span class="a"><b>Fat: </b><strong id="o3">NA/NA</strong><br>
+            <p class="Warning" id="WarningFat"></p>
+        </span>
+        <div>
+            <form class="FoodInput">
+                <label for="FoodName">Food Name:</label>
+                <input type="text" id="FoodName" placeholder="Food Name">
+                <label for="CaloriesAmt">Calories:</label>
+                <input type="text" id="CalorieAmt" placeholder="Calories">
+                <label for="ProtienAmt">Protien:</label>
+                <input type="text" id="ProtienAmt" placeholder="Protien (in grams)">
+                <label for="FatAmt">Fat:</label>
+                <input type="text" id="FatAmt" placeholder="Fat (in grams)">
+                <input class="Button" type="button" id=Submit2 value="Submit">
+                <input class="Button" type="button" id="Remove" value="Remove Entry">
+            </form> <br><br>
+            <div class="Tabular">
+                <table id="Table">
+                    <tr>
+                        <th>Food Name</th>
+                        <th>Calories</th>
+                        <th>Protien</th>
+                        <th>Fat</th>
+                    </tr>
+                    <tr>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+   <script src="final.js"></script>
+</body>
+
+</html>
