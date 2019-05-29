@@ -24,15 +24,15 @@
                 <br>
                 Age:
                 <br>
-                <input type="text" id="Age" placeholder="Age">
+                <input type="text" id="Age" placeholder="Age"onkeypress="javascript:return isNumber(event)"/>
                 <br>
                 Height:
                 <br>
-                <input type="text" id="Height" placeholder="Height">
+                <input type="text" id="Height" placeholder="Height"onkeypress="javascript:return isNumber(event)"/>
                 <br>
                 Weight:
                 <br>
-                <input type="text" id="Weight" placeholder="Weight">
+                <input type="text" id="Weight" placeholder="Weight"onkeypress="javascript:return isNumber(event)"/>
                 <br>
                 <input type="checkbox" id="Save"> Remember Me
                 <br>
@@ -56,15 +56,16 @@
         <div>
             <form class="FoodInput">
                 <label for="FoodName">Food Name:</label>
-                <input type="text" id="FoodName" placeholder="Food Name">
+                <input type="text" id="FoodName" placeholder="Food Name"/>
                 <label for="CaloriesAmt">Calories:</label>
-                <input type="text" id="CalorieAmt" placeholder="Calories">
+                <input type="text" id="CalorieAmt" placeholder="Calories" onkeypress="javascript:return isNumber(event)"/>
                 <label for="ProtienAmt">Protien:</label>
-                <input type="text" id="ProtienAmt" placeholder="Protien (in grams)">
+                <input type="text" id="ProtienAmt" placeholder="Protien (in grams)"onkeypress="javascript:return isNumber(event)"/>
                 <label for="FatAmt">Fat:</label>
-                <input type="text" id="FatAmt" placeholder="Fat (in grams)">
+                <input type="text" id="FatAmt" placeholder="Fat (in grams)"onkeypress="javascript:return isNumber(event)"/><br>
                 <input class="Button" type="button" id=Submit2 value="Submit">
                 <input class="Button" type="button" id="Remove" value="Remove Entry">
+                <input class="Button" type="button" id="Clear" value="Clear Table">
             </form> <br><br>
             <div class="Tabular">
                 <table id="Table">
@@ -80,7 +81,7 @@
             </div>
         </div>
     </div>
-   <script src="final.js"></script>
+   <script src="final2.js"></script>
 </body>
 
 </html>
